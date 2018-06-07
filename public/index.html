@@ -60,6 +60,12 @@ Exchange the line above for this to enable offline support
       <p data-l10n-id="info_static"></p>
       
       <input type="text" id="input" value=""><br>
+      <input id="install" type="button" value="install" />
+      <script type="text/javascript">
+			  document.getElementById("install").onclick = function () { 
+				navigator.Apps.install();
+		    }
+      </script>
 
     </section>
 
